@@ -1,0 +1,22 @@
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>exo1</title>
+</head>
+<body>
+  <div ng-controller="fomulaire">
+      <form name="myForm" >
+        <label>Email:
+            <input type="email" name="input" ng-model="email" ng-style="myStyle" required />
+        </label>
+        <button ng-click="myFunc()">Validé</button>
+      </form>
+      <div ng-style="myStyleNan">
+        Email: {{email}}
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

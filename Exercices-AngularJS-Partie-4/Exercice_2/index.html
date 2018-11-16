@@ -1,0 +1,17 @@
+<html ng-app="carApp">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>exo2</title>
+  </head>
+  <body ng-controller="carCtrler">
+    <div ng-repeat="car in cars">
+      <p>
+        <strong>Marque : </strong>{{car.marque}} <br/>
+        <strong>Couleur : </strong>{{car.couleur}}
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
